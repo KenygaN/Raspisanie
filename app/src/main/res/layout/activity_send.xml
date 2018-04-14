@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar_send"
+        app:title="Баг репорт" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Описание проблемы"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/error_text"
+                android:gravity="top" />
+
+            <TextView
+                android:text="Ваше имя (не обязательно)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/error_name" />
+
+            <CheckBox
+                android:text="Прикрепить информацию об устройстве"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox" />
+
+            <Button
+                android:text="Отправить"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_send"
+                android:onClick="onclick_send" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

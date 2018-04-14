@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_label">
+
+        <SwitchPreference
+            android:title="@string/notification"
+            android:summary="@string/notification_summary"
+            android:key="notif_pref"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/small_notif"
+            android:summary="@string/small_notif_summary"
+            android:key="small_pref"
+            android:defaultValue="false"
+            android:dependency="notif_pref"/>
+        <CheckBoxPreference
+            android:title="@string/vibrate"
+            android:summary="@string/vibrate_summary"
+            android:key="vibrate_pref"
+            android:defaultValue="true"
+            android:dependency="notif_pref"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="@string/sound"
+            android:key="sound_pref"
+            android:id="@+id/sound_pref"
+            android:summary="@string/sound_summary"
+            android:dependency="notif_pref" />
+        <RingtonePreference
+            android:title="@string/sound_notif"
+            android:key="sound_pref_custom"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="sound_pref"
+            android:showSilent="false" />
+        <Preference
+            android:title="@string/reset"
+            android:summary="@string/reset_summary"
+            android:key="reset_group" />
+        <ListPreference
+            android:title="@string/otdel"
+            android:summary="@string/otdel_summary"
+            android:key="otdel"
+            android:defaultValue="0"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" />
+        <Preference
+            android:title="@string/send"
+            android:summary="@string/send_summary"
+            android:key="send_message" />
+        <Preference
+            android:title="@string/traffic_stats"
+            android:summary=""
+            android:key="traffic" />
+        <Preference
+            android:title="О программе"
+            android:summary=""
+            android:key="about" />
+    </PreferenceCategory>
+</PreferenceScreen>

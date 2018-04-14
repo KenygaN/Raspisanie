@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Расписание</string>
+    <string name="settings">Настройки</string>
+    <string name="setting_label">Настройки уведомлений</string>
+
+    <string name="notification">Уведомления</string>
+    <string name="notification_summary">Включить уведомления</string>
+
+    <string name="small_notif">Компактное уведомление</string>
+    <string name="small_notif_summary">Включите если текст не вмещается в уведомление</string>
+
+    <string name="vibrate">Вибрация</string>
+    <string name="vibrate_summary">Включить вибрацию в уведомлении</string>
+
+    <string name="sound">Звук</string>
+    <string name="sound_summary">Включить звук в уведомлении</string>
+
+    <string name="indicator">Индикатор</string>
+    <string name="indicator_summary">Включить индикацию в уведомлении</string>
+
+    <string name="reset">Изменение группы</string>
+    <string name="reset_summary">Меняет группу по умолчанию</string>
+    <string name="send">Обратная связь</string>
+    <string name="send_summary">Написать разработчику</string>
+
+    <string name="traffic_stats">Статистика траффика</string>
+    <string name="sound_notif">Звук уведомлений</string>
+    <string name="red_rasp">Редактор расписания</string>
+    <string name="otdel">Выбор отделения</string>
+    <string name="otdel_summary">Выберите какое расписание загружать</string>
+    <string name="reload">Обновить</string>
+    <string name="setting">Настройки</string>
+
+
+</resources>

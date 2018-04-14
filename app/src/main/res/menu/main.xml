@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/reload"
+        android:showAsAction="ifRoom"
+        android:title="@string/reload"
+        android:icon="@android:drawable/ic_menu_rotate">
+    </item>
+    <item
+        android:id="@+id/setting"
+        android:showAsAction="never"
+        android:title="@string/setting">
+    </item>
+</menu>
